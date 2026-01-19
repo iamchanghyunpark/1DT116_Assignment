@@ -2,7 +2,7 @@ TARGET = libpedsim.dylib
 SOURCES = $(shell echo *.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)
 LDFLAGS = -dynamiclib
-CXXFLAGS = -fPIC -Xpreprocessor -fopenmp -DNOCUDA --std=c++11
+CXXFLAGS = -fPIC -Xpreprocessor -fopenmp -DNOCUDA --std=c++11 -g
 INCPATH=-I/opt/homebrew/opt/libomp/include
 LDFLAGS+= -L/opt/homebrew/opt/libomp/lib
 LDFLAGS+= -lomp -shared

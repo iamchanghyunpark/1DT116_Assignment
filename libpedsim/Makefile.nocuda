@@ -1,7 +1,7 @@
 TARGET = libpedsim.so
 SOURCES = $(shell echo *.cpp)
 OBJECTS = $(SOURCES:.cpp=.o)
-CXXFLAGS = -fPIC -shared -lm -fopenmp -march=native -DNOCUDA
+CXXFLAGS = -fPIC -shared -lm -fopenmp -march=native -DNOCUDA -g
 
 all: $(TARGET)
 
